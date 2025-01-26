@@ -15,7 +15,7 @@ if ($resultGruposCuidado->num_rows > 0) {
         $id_grupoCuidado = $grupo['id'];
 
         // 2. Para cada grupo, buscar os usuários associados
-        $sqlUsuarios = "SELECT id, tokenFcm FROM usuarios WHERE id_grupoCuidado = '$id_grupoCuidado'";
+        $sqlUsuarios = "SELECT id, nome, tokenFcm FROM usuarios WHERE id_grupoCuidado = '$id_grupoCuidado'";
         $resultUsuarios = $conn->query($sqlUsuarios);
         $usuarios = [];
 
@@ -62,13 +62,14 @@ if ($resultGruposCuidado->num_rows > 0) {
             // 4. Enviar notificações para todos os usuários do grupo
             foreach ($usuarios as $usuario) {
                 $token = $usuario['tokenFcm'];
+                $nome_usuario_grupo = explode(' ', $usuario['nome'])[0];
                 foreach ($remedios_programados as $remedio) {
                     // Pega o primeiro nome do campo 'nome' do array atual
                     $nome_usuario = explode(' ', $remedio['nome'])[0]; 
                     $nome_remedio = $remedio['nome_remedio'];
         
                     sendFirebaseNotification($token, "Atenção $nome_usuario", "Você tem que tomar $nome_remedio");
-                    echo "Notificação enviada para $nome_usuario sobre $nome_remedio." . PHP_EOL;
+                    echo "Notificação enviada para $nome_usuario_grupo sobre $nome_remedio." . PHP_EOL;
                 }
             }
         } else {
