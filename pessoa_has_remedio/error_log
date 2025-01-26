@@ -1,0 +1,25 @@
+[25-Jan-2025 19:49:44 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'pr.hora_dia' in 'field list' in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php:12
+Stack trace:
+#0 /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php(12): mysqli->query('SELECT r.nome A...')
+#1 {main}
+  thrown in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php on line 12
+[25-Jan-2025 19:49:46 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'pr.hora_dia' in 'field list' in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php:12
+Stack trace:
+#0 /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php(12): mysqli->query('SELECT r.nome A...')
+#1 {main}
+  thrown in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php on line 12
+[25-Jan-2025 19:49:50 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'pr.hora_dia' in 'field list' in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php:12
+Stack trace:
+#0 /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php(12): mysqli->query('SELECT r.nome A...')
+#1 {main}
+  thrown in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php on line 12
+[25-Jan-2025 19:50:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'pr.hora_dia' in 'field list' in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php:12
+Stack trace:
+#0 /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php(12): mysqli->query('SELECT r.nome A...')
+#1 {main}
+  thrown in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php on line 12
+[25-Jan-2025 19:50:04 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'pr.hora_dia' in 'field list' in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php:12
+Stack trace:
+#0 /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php(12): mysqli->query('SELECT r.nome A...')
+#1 {main}
+  thrown in /home2/felpst09/public_html/backend_healthmanage/pessoa_has_remedio/get_remedios_by_pessoa.php on line 12
